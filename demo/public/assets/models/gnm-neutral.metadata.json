@@ -1,0 +1,4671 @@
+{
+  "source": {
+    "repository": "https://github.com/google/GNM",
+    "commit": "e26528fbf34d3fefd1a8f160d1b68641df78a586",
+    "license": "Apache-2.0",
+    "model": "GNM Head v3.0"
+  },
+  "identity": {
+    "method": "GNM v3 population-mean identity (zero coefficients)",
+    "coefficientCount": 253,
+    "coefficientNorm": 0.0
+  },
+  "topology": {
+    "sourceVertices": 17821,
+    "sourceTriangles": 35324,
+    "primitiveCount": 8,
+    "runtimeTopologySha256": "0edd9b3927c25224b5cbd63b9ec6b2940c12d1c0fe69ae65ef262fbfdfe34427",
+    "runtimeTopologyMatchesBaseline": true,
+    "boundsMeters": {
+      "min": [
+        -0.12777356803417206,
+        0.06556179374456406,
+        -0.09221039712429047
+      ],
+      "max": [
+        0.127635657787323,
+        0.40711015462875366,
+        0.14650166034698486
+      ]
+    },
+    "primitives": {
+      "skin": {
+        "vertices": 11491,
+        "triangles": 22576,
+        "morphNormals": true,
+        "oralSemanticChannels": [
+          "upper_lip",
+          "lower_lip",
+          "mouth_sock",
+          "perioral_region"
+        ]
+      },
+      "eye_sclera": {
+        "vertices": 480,
+        "triangles": 864,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      },
+      "eye_iris": {
+        "vertices": 290,
+        "triangles": 528,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      },
+      "eye_pupil": {
+        "vertices": 98,
+        "triangles": 144,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      },
+      "eye_interior": {
+        "vertices": 770,
+        "triangles": 1488,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      },
+      "upper_teeth": {
+        "vertices": 1636,
+        "triangles": 2828,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      },
+      "lower_teeth": {
+        "vertices": 1636,
+        "triangles": 2828,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      },
+      "tongue": {
+        "vertices": 967,
+        "triangles": 1824,
+        "morphNormals": false,
+        "oralSemanticChannels": []
+      }
+    }
+  },
+  "rig": {
+    "morphTargetCount": 67,
+    "targetNames": [
+      "viseme_MBP",
+      "viseme_FV",
+      "viseme_L",
+      "viseme_TH",
+      "viseme_TDN",
+      "viseme_SZ",
+      "viseme_CHSH",
+      "viseme_KG",
+      "viseme_R",
+      "viseme_WQ",
+      "vowel_AA",
+      "vowel_AE",
+      "vowel_AH",
+      "vowel_EH",
+      "vowel_IH",
+      "vowel_EE",
+      "vowel_OH",
+      "vowel_OO",
+      "jawOpen",
+      "mouthFunnel",
+      "mouthPucker",
+      "tongueTipUp",
+      "jawForward",
+      "upperLipRaise",
+      "lowerLipDepress",
+      "lipCompress",
+      "lipRollIn",
+      "lipRollOut",
+      "mouthCornersUp",
+      "mouthCornersDown",
+      "mouthStretch",
+      "tongueTipLateral",
+      "tongueBladeUp",
+      "tongueBladeGroove",
+      "tongueBodyHigh",
+      "tongueBodyBack",
+      "tongueBodyLow",
+      "tongueForward",
+      "tongueRetract",
+      "contactBilabial",
+      "contactLabiodental",
+      "contactDental",
+      "contactAlveolar",
+      "contactLateral",
+      "correctiveSibilantGroove",
+      "contactVelar",
+      "eyeOpen",
+      "blinkLeft",
+      "blinkRight",
+      "smile",
+      "browConcern",
+      "browLift",
+      "browLiftLeft",
+      "browLiftRight",
+      "browFurrow",
+      "eyeWiden",
+      "eyeSquint",
+      "cheekRaise",
+      "smileMouth",
+      "surpriseMouth",
+      "concernMouth",
+      "curiosityMouth",
+      "emphasisMouth",
+      "gazeLeft",
+      "gazeRight",
+      "gazeUp",
+      "gazeDown"
+    ],
+    "oralTargetCount": 46,
+    "oralTargetNames": [
+      "viseme_MBP",
+      "viseme_FV",
+      "viseme_L",
+      "viseme_TH",
+      "viseme_TDN",
+      "viseme_SZ",
+      "viseme_CHSH",
+      "viseme_KG",
+      "viseme_R",
+      "viseme_WQ",
+      "vowel_AA",
+      "vowel_AE",
+      "vowel_AH",
+      "vowel_EH",
+      "vowel_IH",
+      "vowel_EE",
+      "vowel_OH",
+      "vowel_OO",
+      "jawOpen",
+      "mouthFunnel",
+      "mouthPucker",
+      "tongueTipUp",
+      "jawForward",
+      "upperLipRaise",
+      "lowerLipDepress",
+      "lipCompress",
+      "lipRollIn",
+      "lipRollOut",
+      "mouthCornersUp",
+      "mouthCornersDown",
+      "mouthStretch",
+      "tongueTipLateral",
+      "tongueBladeUp",
+      "tongueBladeGroove",
+      "tongueBodyHigh",
+      "tongueBodyBack",
+      "tongueBodyLow",
+      "tongueForward",
+      "tongueRetract",
+      "contactBilabial",
+      "contactLabiodental",
+      "contactDental",
+      "contactAlveolar",
+      "contactLateral",
+      "correctiveSibilantGroove",
+      "contactVelar"
+    ],
+    "upperFaceTargetNames": [
+      "eyeOpen",
+      "blinkLeft",
+      "blinkRight",
+      "browConcern",
+      "browLift",
+      "browLiftLeft",
+      "browLiftRight",
+      "browFurrow",
+      "eyeWiden",
+      "eyeSquint",
+      "cheekRaise"
+    ],
+    "lowerFaceExpressionTargetNames": [
+      "smileMouth",
+      "surpriseMouth",
+      "concernMouth",
+      "curiosityMouth",
+      "emphasisMouth"
+    ],
+    "gazeTargetNames": [
+      "gazeLeft",
+      "gazeRight",
+      "gazeUp",
+      "gazeDown"
+    ],
+    "recipes": {
+      "viseme_MBP": {
+        "blow": 0.25
+      },
+      "viseme_FV": {
+        "lips_roll_in": 0.25,
+        "snarl": 0.08
+      },
+      "viseme_L": {
+        "tongue_center": 0.22,
+        "surprise": 0.08
+      },
+      "viseme_TH": {
+        "tongue_center": 0.48,
+        "surprise": 0.08
+      },
+      "viseme_TDN": {
+        "tongue_center": 0.16,
+        "surprise": 0.06
+      },
+      "viseme_SZ": {
+        "suck": 0.08,
+        "stretch_face": 0.015
+      },
+      "viseme_CHSH": {
+        "funneler": 0.28,
+        "suck": 0.06
+      },
+      "viseme_KG": {
+        "surprise": 0.22
+      },
+      "viseme_R": {
+        "funneler": 0.12,
+        "corners_down": 0.04
+      },
+      "viseme_WQ": {
+        "pucker": 0.38,
+        "funneler": 0.08
+      },
+      "vowel_AA": {
+        "surprise": 0.95,
+        "stretch_face": 0.04
+      },
+      "vowel_AE": {
+        "stretch_face": 0.25,
+        "happy": 0.08
+      },
+      "vowel_AH": {
+        "surprise": 0.72,
+        "stretch_face": 0.03
+      },
+      "vowel_EH": {
+        "stretch_face": 0.14,
+        "smile_wide": 0.1
+      },
+      "vowel_IH": {
+        "stretch_face": 0.08,
+        "smile_wide": 0.1
+      },
+      "vowel_EE": {
+        "smile_wide": 0.3,
+        "stretch_face": 0.02
+      },
+      "vowel_OH": {
+        "funneler": 0.36,
+        "surprise": 0.08
+      },
+      "vowel_OO": {
+        "pucker": 0.28,
+        "funneler": 0.08
+      },
+      "jawOpen": {
+        "surprise": 1.05
+      },
+      "mouthFunnel": {
+        "funneler": 0.5
+      },
+      "mouthPucker": {
+        "pucker": 0.45
+      },
+      "tongueTipUp": {
+        "tongue_center": 0.22,
+        "surprise": 0.08
+      },
+      "jawForward": {},
+      "upperLipRaise": {
+        "snarl": 0.12
+      },
+      "lowerLipDepress": {
+        "platysma": 0.12
+      },
+      "lipCompress": {
+        "blow": 0.08
+      },
+      "lipRollIn": {
+        "lips_roll_in": 0.24
+      },
+      "lipRollOut": {
+        "pucker": 0.16
+      },
+      "mouthCornersUp": {
+        "happy": 0.2,
+        "smile_wide": 0.06
+      },
+      "mouthCornersDown": {
+        "corners_down": 0.24
+      },
+      "mouthStretch": {
+        "smile_wide": 0.24,
+        "stretch_face": 0.04
+      },
+      "tongueTipLateral": {},
+      "tongueBladeUp": {},
+      "tongueBladeGroove": {},
+      "tongueBodyHigh": {},
+      "tongueBodyBack": {},
+      "tongueBodyLow": {},
+      "tongueForward": {},
+      "tongueRetract": {},
+      "contactBilabial": {},
+      "contactLabiodental": {},
+      "contactDental": {},
+      "contactAlveolar": {},
+      "contactLateral": {},
+      "correctiveSibilantGroove": {},
+      "contactVelar": {},
+      "eyeOpen": {
+        "squint": -0.25
+      },
+      "blinkLeft": {
+        "wink_left": 0.88
+      },
+      "blinkRight": {
+        "wink_right": 0.88
+      },
+      "smile": {
+        "happy": 0.48,
+        "smile_wide": 0.2
+      },
+      "browConcern": {
+        "corners_down": 0.58,
+        "squint": 0.28
+      },
+      "browLift": {
+        "surprise": 1.1
+      },
+      "browLiftLeft": {
+        "surprise": 1.18
+      },
+      "browLiftRight": {
+        "surprise": 1.18
+      },
+      "browFurrow": {
+        "disgust": 0.7,
+        "corners_down": 0.32
+      },
+      "eyeWiden": {
+        "squint": -0.72
+      },
+      "eyeSquint": {
+        "squint": 0.72
+      },
+      "cheekRaise": {
+        "happy": 0.95,
+        "squint": 0.28
+      },
+      "smileMouth": {
+        "happy": 0.82,
+        "smile_wide": 0.34
+      },
+      "surpriseMouth": {
+        "surprise": 0.86
+      },
+      "concernMouth": {
+        "corners_down": 0.76,
+        "platysma": 0.18
+      },
+      "curiosityMouth": {
+        "funneler": 0.2,
+        "pucker": 0.1
+      },
+      "emphasisMouth": {
+        "compress_face": 0.52,
+        "lips_roll_in": 0.1
+      },
+      "gazeLeft": {},
+      "gazeRight": {},
+      "gazeUp": {},
+      "gazeDown": {}
+    },
+    "targetRoles": {
+      "viseme_MBP": "oral",
+      "viseme_FV": "oral",
+      "viseme_L": "oral",
+      "viseme_TH": "oral",
+      "viseme_TDN": "oral",
+      "viseme_SZ": "oral",
+      "viseme_CHSH": "oral",
+      "viseme_KG": "oral",
+      "viseme_R": "oral",
+      "viseme_WQ": "oral",
+      "vowel_AA": "oral",
+      "vowel_AE": "oral",
+      "vowel_AH": "oral",
+      "vowel_EH": "oral",
+      "vowel_IH": "oral",
+      "vowel_EE": "oral",
+      "vowel_OH": "oral",
+      "vowel_OO": "oral",
+      "jawOpen": "oral",
+      "mouthFunnel": "oral",
+      "mouthPucker": "oral",
+      "tongueTipUp": "oral",
+      "jawForward": "oral",
+      "upperLipRaise": "oral",
+      "lowerLipDepress": "oral",
+      "lipCompress": "oral",
+      "lipRollIn": "oral",
+      "lipRollOut": "oral",
+      "mouthCornersUp": "oral",
+      "mouthCornersDown": "oral",
+      "mouthStretch": "oral",
+      "tongueTipLateral": "oral",
+      "tongueBladeUp": "oral",
+      "tongueBladeGroove": "oral",
+      "tongueBodyHigh": "oral",
+      "tongueBodyBack": "oral",
+      "tongueBodyLow": "oral",
+      "tongueForward": "oral",
+      "tongueRetract": "oral",
+      "contactBilabial": "oral",
+      "contactLabiodental": "oral",
+      "contactDental": "oral",
+      "contactAlveolar": "oral",
+      "contactLateral": "oral",
+      "correctiveSibilantGroove": "oral",
+      "contactVelar": "oral",
+      "eyeOpen": "expression",
+      "blinkLeft": "expression",
+      "blinkRight": "expression",
+      "smile": "expression",
+      "browConcern": "expression",
+      "browLift": "expression",
+      "browLiftLeft": "expression",
+      "browLiftRight": "expression",
+      "browFurrow": "expression",
+      "eyeWiden": "expression",
+      "eyeSquint": "expression",
+      "cheekRaise": "expression",
+      "smileMouth": "expression",
+      "surpriseMouth": "expression",
+      "concernMouth": "expression",
+      "curiosityMouth": "expression",
+      "emphasisMouth": "expression",
+      "gazeLeft": "gaze",
+      "gazeRight": "gaze",
+      "gazeUp": "gaze",
+      "gazeDown": "gaze"
+    },
+    "geometryScopes": {
+      "viseme_MBP": null,
+      "viseme_FV": null,
+      "viseme_L": null,
+      "viseme_TH": null,
+      "viseme_TDN": null,
+      "viseme_SZ": null,
+      "viseme_CHSH": null,
+      "viseme_KG": null,
+      "viseme_R": null,
+      "viseme_WQ": null,
+      "vowel_AA": null,
+      "vowel_AE": null,
+      "vowel_AH": null,
+      "vowel_EH": null,
+      "vowel_IH": null,
+      "vowel_EE": null,
+      "vowel_OH": null,
+      "vowel_OO": null,
+      "jawOpen": null,
+      "mouthFunnel": null,
+      "mouthPucker": null,
+      "tongueTipUp": null,
+      "jawForward": null,
+      "upperLipRaise": null,
+      "lowerLipDepress": null,
+      "lipCompress": null,
+      "lipRollIn": null,
+      "lipRollOut": null,
+      "mouthCornersUp": null,
+      "mouthCornersDown": null,
+      "mouthStretch": null,
+      "tongueTipLateral": null,
+      "tongueBladeUp": null,
+      "tongueBladeGroove": null,
+      "tongueBodyHigh": null,
+      "tongueBodyBack": null,
+      "tongueBodyLow": null,
+      "tongueForward": null,
+      "tongueRetract": null,
+      "contactBilabial": null,
+      "contactLabiodental": null,
+      "contactDental": null,
+      "contactAlveolar": null,
+      "contactLateral": null,
+      "correctiveSibilantGroove": null,
+      "contactVelar": null,
+      "eyeOpen": "upperFaceBilateral",
+      "blinkLeft": "upperFaceLeft",
+      "blinkRight": "upperFaceRight",
+      "smile": null,
+      "browConcern": "upperFaceBilateral",
+      "browLift": "upperFaceBilateral",
+      "browLiftLeft": "upperFaceLeft",
+      "browLiftRight": "upperFaceRight",
+      "browFurrow": "upperFaceBilateral",
+      "eyeWiden": "upperFaceBilateral",
+      "eyeSquint": "upperFaceBilateral",
+      "cheekRaise": "upperFaceBilateral",
+      "smileMouth": "lowerFaceExpression",
+      "surpriseMouth": "lowerFaceExpression",
+      "concernMouth": "lowerFaceExpression",
+      "curiosityMouth": "lowerFaceExpression",
+      "emphasisMouth": "lowerFaceExpression",
+      "gazeLeft": "ocular",
+      "gazeRight": "ocular",
+      "gazeUp": "ocular",
+      "gazeDown": "ocular"
+    },
+    "correctiveTypes": {
+      "viseme_MBP": "bilabial_seal",
+      "viseme_FV": "labiodental_contact",
+      "viseme_L": "lateral_contact",
+      "viseme_TH": "dental_protrusion",
+      "viseme_TDN": "alveolar_stop_contact",
+      "viseme_SZ": "sibilant_groove",
+      "viseme_CHSH": "postalveolar_groove",
+      "viseme_KG": "velar_contact",
+      "viseme_R": "rhotic_bunch",
+      "viseme_WQ": null,
+      "vowel_AA": null,
+      "vowel_AE": null,
+      "vowel_AH": null,
+      "vowel_EH": null,
+      "vowel_IH": null,
+      "vowel_EE": null,
+      "vowel_OH": null,
+      "vowel_OO": null,
+      "jawOpen": null,
+      "mouthFunnel": null,
+      "mouthPucker": null,
+      "tongueTipUp": "alveolar_stop_contact",
+      "jawForward": "jaw_forward",
+      "upperLipRaise": "upper_lip_raise",
+      "lowerLipDepress": "lower_lip_depress",
+      "lipCompress": "lip_compress",
+      "lipRollIn": "lip_roll_in",
+      "lipRollOut": "lip_roll_out",
+      "mouthCornersUp": "corners_up",
+      "mouthCornersDown": "corners_down",
+      "mouthStretch": "mouth_stretch",
+      "tongueTipLateral": "lateral_pose",
+      "tongueBladeUp": "tongue_blade_up",
+      "tongueBladeGroove": "tongue_blade_groove_pose",
+      "tongueBodyHigh": "tongue_body_high",
+      "tongueBodyBack": "tongue_body_back",
+      "tongueBodyLow": "tongue_body_low",
+      "tongueForward": "tongue_forward",
+      "tongueRetract": "tongue_retract",
+      "contactBilabial": "bilabial_seal",
+      "contactLabiodental": "labiodental_contact",
+      "contactDental": "dental_contact",
+      "contactAlveolar": "alveolar_stop_contact",
+      "contactLateral": "lateral_contact",
+      "correctiveSibilantGroove": "tongue_blade_groove",
+      "contactVelar": "velar_contact",
+      "eyeOpen": null,
+      "blinkLeft": null,
+      "blinkRight": null,
+      "smile": null,
+      "browConcern": null,
+      "browLift": null,
+      "browLiftLeft": null,
+      "browLiftRight": null,
+      "browFurrow": null,
+      "eyeWiden": null,
+      "eyeSquint": null,
+      "cheekRaise": null,
+      "smileMouth": null,
+      "surpriseMouth": null,
+      "concernMouth": null,
+      "curiosityMouth": null,
+      "emphasisMouth": null,
+      "gazeLeft": null,
+      "gazeRight": null,
+      "gazeUp": null,
+      "gazeDown": null
+    },
+    "sourceRegionFilters": {
+      "viseme_MBP": null,
+      "viseme_FV": null,
+      "viseme_L": null,
+      "viseme_TH": null,
+      "viseme_TDN": null,
+      "viseme_SZ": null,
+      "viseme_CHSH": null,
+      "viseme_KG": null,
+      "viseme_R": null,
+      "viseme_WQ": null,
+      "vowel_AA": null,
+      "vowel_AE": null,
+      "vowel_AH": null,
+      "vowel_EH": null,
+      "vowel_IH": null,
+      "vowel_EE": null,
+      "vowel_OH": null,
+      "vowel_OO": null,
+      "jawOpen": null,
+      "mouthFunnel": null,
+      "mouthPucker": null,
+      "tongueTipUp": null,
+      "jawForward": null,
+      "upperLipRaise": [
+        "lowerFace"
+      ],
+      "lowerLipDepress": [
+        "lowerFace"
+      ],
+      "lipCompress": [
+        "lowerFace"
+      ],
+      "lipRollIn": [
+        "lowerFace"
+      ],
+      "lipRollOut": [
+        "lowerFace"
+      ],
+      "mouthCornersUp": [
+        "lowerFace"
+      ],
+      "mouthCornersDown": [
+        "lowerFace"
+      ],
+      "mouthStretch": [
+        "lowerFace"
+      ],
+      "tongueTipLateral": null,
+      "tongueBladeUp": null,
+      "tongueBladeGroove": null,
+      "tongueBodyHigh": null,
+      "tongueBodyBack": null,
+      "tongueBodyLow": null,
+      "tongueForward": null,
+      "tongueRetract": null,
+      "contactBilabial": null,
+      "contactLabiodental": null,
+      "contactDental": null,
+      "contactAlveolar": null,
+      "contactLateral": null,
+      "correctiveSibilantGroove": null,
+      "contactVelar": null,
+      "eyeOpen": [
+        "leftEye",
+        "rightEye"
+      ],
+      "blinkLeft": [
+        "leftEye"
+      ],
+      "blinkRight": [
+        "rightEye"
+      ],
+      "smile": null,
+      "browConcern": [
+        "leftEye",
+        "rightEye"
+      ],
+      "browLift": [
+        "leftEye",
+        "rightEye"
+      ],
+      "browLiftLeft": [
+        "leftEye"
+      ],
+      "browLiftRight": [
+        "rightEye"
+      ],
+      "browFurrow": [
+        "leftEye",
+        "rightEye"
+      ],
+      "eyeWiden": [
+        "leftEye",
+        "rightEye"
+      ],
+      "eyeSquint": [
+        "leftEye",
+        "rightEye"
+      ],
+      "cheekRaise": [
+        "leftEye",
+        "rightEye"
+      ],
+      "smileMouth": [
+        "lowerFace"
+      ],
+      "surpriseMouth": [
+        "lowerFace"
+      ],
+      "concernMouth": [
+        "lowerFace"
+      ],
+      "curiosityMouth": [
+        "lowerFace"
+      ],
+      "emphasisMouth": [
+        "lowerFace"
+      ],
+      "gazeLeft": null,
+      "gazeRight": null,
+      "gazeUp": null,
+      "gazeDown": null
+    },
+    "sourceJointRotationsRadians": {
+      "gazeLeft": {
+        "left_eye": [
+          0.0,
+          0.12,
+          0.0
+        ],
+        "right_eye": [
+          0.0,
+          0.12,
+          0.0
+        ]
+      },
+      "gazeRight": {
+        "left_eye": [
+          0.0,
+          -0.12,
+          0.0
+        ],
+        "right_eye": [
+          0.0,
+          -0.12,
+          0.0
+        ]
+      },
+      "gazeUp": {
+        "left_eye": [
+          -0.1,
+          0.0,
+          0.0
+        ],
+        "right_eye": [
+          -0.1,
+          0.0,
+          0.0
+        ]
+      },
+      "gazeDown": {
+        "left_eye": [
+          0.1,
+          0.0,
+          0.0
+        ],
+        "right_eye": [
+          0.1,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "modelDimensions": {
+      "identityCoefficients": 253,
+      "expressionCoefficients": 383,
+      "joints": 4,
+      "vertices": 17821,
+      "triangles": 35324
+    },
+    "jointNames": [
+      "neck",
+      "head",
+      "left_eye",
+      "right_eye"
+    ],
+    "sourceExpressionSpace": {
+      "coefficientCount": 383,
+      "regions": {
+        "leftEye": {
+          "startInclusive": 0,
+          "endExclusive": 100,
+          "coefficientCount": 100
+        },
+        "rightEye": {
+          "startInclusive": 100,
+          "endExclusive": 200,
+          "coefficientCount": 100
+        },
+        "lowerFace": {
+          "startInclusive": 200,
+          "endExclusive": 350,
+          "coefficientCount": 150
+        },
+        "tongue": {
+          "startInclusive": 350,
+          "endExclusive": 382,
+          "coefficientCount": 32
+        },
+        "iris": {
+          "startInclusive": 382,
+          "endExclusive": 383,
+          "coefficientCount": 1
+        }
+      },
+      "semanticDecoderLabels": [
+        "surprise",
+        "disgust",
+        "suck",
+        "compress_face",
+        "stretch_face",
+        "happy",
+        "squint",
+        "platysma",
+        "blow",
+        "funneler",
+        "smile_wide",
+        "corners_down",
+        "pucker",
+        "wink_left",
+        "wink_right",
+        "mouth_left",
+        "mouth_right",
+        "lips_roll_in",
+        "snarl",
+        "tongue_center"
+      ],
+      "policy": "Evaluate Google's semantic decoder into the complete 383-value region-partitioned GNM v3 expression vector offline, isolate named controls to documented coefficient regions, and bake paired native eye-joint rotations as ocular-only gaze morphs. The result is a compact speech/performance basis with bounded contact correctives.",
+      "rawPcaPolicy": "The 150 lower-face and 32 tongue PCA axes are intentionally not exposed one-for-one: upstream names are ordinal, not anatomical, so arbitrary direct activation is not a stable speech-control API. Semantic decoder poses and deterministic topology-aware correctives provide interpretable controls while retaining GNM correspondence."
+    },
+    "compactTargetAudit": {
+      "nontrivialTargetCount": 67,
+      "duplicateTargetCount": 0,
+      "thresholdMillimeters": 0.01,
+      "oralRuntimeContractSha256": "c68b0d2aed9e43891c0a8cc55e7d8ff789319beaa4e8eb491a137eb5eb2b8b88",
+      "oralRuntimeContractMatchesBaseline": true,
+      "targets": {
+        "viseme_MBP": {
+          "maximumDeltaMillimeters": 3.041912078857422,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.041912078857422,
+              "rmsDeltaMillimeters": 0.6811477541923523,
+              "movedVertexCountAbove0_01mm": 6352
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 1.8381381034851074,
+              "rmsDeltaMillimeters": 1.417497992515564,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 2.0365090370178223,
+              "rmsDeltaMillimeters": 1.568129301071167,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "27dc2d92fdf4632442e2dc8a844e007c4f9e2d973bce2fca5f335975713a8c0d"
+        },
+        "viseme_FV": {
+          "maximumDeltaMillimeters": 6.188119411468506,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 6.188119411468506,
+              "rmsDeltaMillimeters": 1.1623457670211792,
+              "movedVertexCountAbove0_01mm": 6462
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 3.789783477783203,
+              "rmsDeltaMillimeters": 2.9191884994506836,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 3.8141109943389893,
+              "rmsDeltaMillimeters": 2.5693702697753906,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "e342602fd04b3f8d689245aa1ef50c8b588868d23417283ff34f23b81233ec8c"
+        },
+        "viseme_L": {
+          "maximumDeltaMillimeters": 17.38748550415039,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.4893715381622314,
+              "rmsDeltaMillimeters": 0.49234840273857117,
+              "movedVertexCountAbove0_01mm": 6446
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 2.022996425628662,
+              "rmsDeltaMillimeters": 1.3648563623428345,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 17.38748550415039,
+              "rmsDeltaMillimeters": 7.083130359649658,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "eb9c18b91d7e8e70efc772415087172d3f12fa1dccfa261b779285cac8696040"
+        },
+        "viseme_TH": {
+          "maximumDeltaMillimeters": 15.77037239074707,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 6.972947597503662,
+              "rmsDeltaMillimeters": 0.962721049785614,
+              "movedVertexCountAbove0_01mm": 6536
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 3.9837327003479004,
+              "rmsDeltaMillimeters": 2.727083921432495,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 15.77037239074707,
+              "rmsDeltaMillimeters": 6.992334842681885,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "f27bd911ad70d30b02c88d5977d0dfca56c7ce444a049c1a562e2e2988204f66"
+        },
+        "viseme_TDN": {
+          "maximumDeltaMillimeters": 17.425569534301758,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.5502233505249023,
+              "rmsDeltaMillimeters": 0.360323965549469,
+              "movedVertexCountAbove0_01mm": 6391
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 1.4801275730133057,
+              "rmsDeltaMillimeters": 0.9976410269737244,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 17.425569534301758,
+              "rmsDeltaMillimeters": 7.376696586608887,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "bcc8debaad86ac5bb6a081e452463f22f43daed6936ff253f5a39fe3965224e4"
+        },
+        "viseme_SZ": {
+          "maximumDeltaMillimeters": 11.380739212036133,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 1.2774875164031982,
+              "rmsDeltaMillimeters": 0.28059977293014526,
+              "movedVertexCountAbove0_01mm": 5967
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.7745633721351624,
+              "rmsDeltaMillimeters": 0.47914648056030273,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 11.380739212036133,
+              "rmsDeltaMillimeters": 4.591066837310791,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "7c7e8e0c2895910fbc90c51110f61543ca6ca0a454d6eecdb34a9cb5d1d22fc0"
+        },
+        "viseme_CHSH": {
+          "maximumDeltaMillimeters": 8.726094245910645,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 4.1345648765563965,
+              "rmsDeltaMillimeters": 0.7775073051452637,
+              "movedVertexCountAbove0_01mm": 6320
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 1.8792450428009033,
+              "rmsDeltaMillimeters": 1.2250028848648071,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 8.726094245910645,
+              "rmsDeltaMillimeters": 3.731370449066162,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "10c5199349ab5e0a51da7d857bb4f6e8cdfd49e81ebdaad1f93e96d2629d3373"
+        },
+        "viseme_KG": {
+          "maximumDeltaMillimeters": 15.840049743652344,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 1.9397064447402954,
+              "rmsDeltaMillimeters": 0.3600892126560211,
+              "movedVertexCountAbove0_01mm": 6363
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 1.2495391368865967,
+              "rmsDeltaMillimeters": 0.8805103302001953,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 15.840049743652344,
+              "rmsDeltaMillimeters": 4.781607151031494,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "764f1b30ea0f79ecf321a977b289caaecafaeac2ba229852698189edde859465"
+        },
+        "viseme_R": {
+          "maximumDeltaMillimeters": 9.288485527038574,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 1.6584364175796509,
+              "rmsDeltaMillimeters": 0.25363653898239136,
+              "movedVertexCountAbove0_01mm": 6100
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.6389395594596863,
+              "rmsDeltaMillimeters": 0.40519601106643677,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 9.288485527038574,
+              "rmsDeltaMillimeters": 3.8993139266967773,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "86eee953febc39737762b92bfff169bbbfb81937bbe153b9f07d0e204cb18211"
+        },
+        "viseme_WQ": {
+          "maximumDeltaMillimeters": 5.171813011169434,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.171813011169434,
+              "rmsDeltaMillimeters": 1.1011284589767456,
+              "movedVertexCountAbove0_01mm": 6306
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 3.3389196395874023,
+              "rmsDeltaMillimeters": 2.2156271934509277,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 4.03688383102417,
+              "rmsDeltaMillimeters": 2.672250270843506,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "f5c8f70a2c1fa9edfd89b4651c75072dec736e04b6c0ab7e227ca2e1b4cd73af"
+        },
+        "vowel_AA": {
+          "maximumDeltaMillimeters": 9.379659652709961,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 9.379659652709961,
+              "rmsDeltaMillimeters": 1.7704463005065918,
+              "movedVertexCountAbove0_01mm": 6542
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 6.233297824859619,
+              "rmsDeltaMillimeters": 4.410885810852051,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 5.823399543762207,
+              "rmsDeltaMillimeters": 3.535693407058716,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "40b26d9ec7dd79e9cecff7ff0f40ad3e7c687062cd5373bd8ffaa6fc50480796"
+        },
+        "vowel_AE": {
+          "maximumDeltaMillimeters": 7.336786270141602,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 7.336786270141602,
+              "rmsDeltaMillimeters": 1.426665186882019,
+              "movedVertexCountAbove0_01mm": 6527
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 5.250940322875977,
+              "rmsDeltaMillimeters": 3.802661895751953,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 5.231980323791504,
+              "rmsDeltaMillimeters": 3.1937732696533203,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "b92e163e9e48565a6dc3006a9070a1576423dc8e3cac889cc9dc313c217f5e71"
+        },
+        "vowel_AH": {
+          "maximumDeltaMillimeters": 7.10087251663208,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 7.10087251663208,
+              "rmsDeltaMillimeters": 1.3401036262512207,
+              "movedVertexCountAbove0_01mm": 6523
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 4.717576026916504,
+              "rmsDeltaMillimeters": 3.338495969772339,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 4.4072980880737305,
+              "rmsDeltaMillimeters": 2.6756670475006104,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "e3014d8f672a518ed1e933fe739804ad5cbccaf94ac9d1197e24bd940d24828a"
+        },
+        "vowel_EH": {
+          "maximumDeltaMillimeters": 4.3416428565979,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 4.3416428565979,
+              "rmsDeltaMillimeters": 0.8657636642456055,
+              "movedVertexCountAbove0_01mm": 6472
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 2.992704153060913,
+              "rmsDeltaMillimeters": 2.140410900115967,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 2.9359943866729736,
+              "rmsDeltaMillimeters": 1.8044636249542236,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "9a1d5f25571a91fa216f110e3e3418d1dfaab9e71680a6437700a7666c9f8bd4"
+        },
+        "vowel_IH": {
+          "maximumDeltaMillimeters": 2.75384259223938,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.75384259223938,
+              "rmsDeltaMillimeters": 0.5591186285018921,
+              "movedVertexCountAbove0_01mm": 6413
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 1.7406965494155884,
+              "rmsDeltaMillimeters": 1.2321147918701172,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 1.67429780960083,
+              "rmsDeltaMillimeters": 1.0490989685058594,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "8678a54072455462f03d406ba2e05486be8accf0a0d33dd6f8dad057f028a720"
+        },
+        "vowel_EE": {
+          "maximumDeltaMillimeters": 3.701280117034912,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.701280117034912,
+              "rmsDeltaMillimeters": 0.8558129668235779,
+              "movedVertexCountAbove0_01mm": 6463
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.9798430800437927,
+              "rmsDeltaMillimeters": 0.7005868554115295,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 1.1221683025360107,
+              "rmsDeltaMillimeters": 0.7799085378646851,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "3484bb01cd817d5c8f5acc9e74c637a4a07cf43c3d838c4e9368e9517dd4bfe0"
+        },
+        "vowel_OH": {
+          "maximumDeltaMillimeters": 5.37263822555542,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.37263822555542,
+              "rmsDeltaMillimeters": 0.8660820722579956,
+              "movedVertexCountAbove0_01mm": 6349
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 2.2996037006378174,
+              "rmsDeltaMillimeters": 1.4523837566375732,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 2.3756840229034424,
+              "rmsDeltaMillimeters": 1.3748447895050049,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "9b697db57b71f52deb1266d6a96aa3822419384457dede290ad322ee4112807e"
+        },
+        "vowel_OO": {
+          "maximumDeltaMillimeters": 3.9934260845184326,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.9934260845184326,
+              "rmsDeltaMillimeters": 0.8518475294113159,
+              "movedVertexCountAbove0_01mm": 6240
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 2.5484793186187744,
+              "rmsDeltaMillimeters": 1.6869288682937622,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 3.10638427734375,
+              "rmsDeltaMillimeters": 2.0376455783843994,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "98f628ab87d064650a0830e9ec2101e8b34095f8ac58c725bff7563870b7cd8d"
+        },
+        "jawOpen": {
+          "maximumDeltaMillimeters": 9.257678031921387,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 9.257678031921387,
+              "rmsDeltaMillimeters": 1.7186076641082764,
+              "movedVertexCountAbove0_01mm": 6543
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 5.9637064933776855,
+              "rmsDeltaMillimeters": 4.201268672943115,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 5.565544605255127,
+              "rmsDeltaMillimeters": 3.346130847930908,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "aa1d8911f7d76ba8cd242b63a37220d6929aa4a084b8965e69fbaa9e361c9902"
+        },
+        "mouthFunnel": {
+          "maximumDeltaMillimeters": 6.579452037811279,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 6.579452037811279,
+              "rmsDeltaMillimeters": 1.113913893699646,
+              "movedVertexCountAbove0_01mm": 6368
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 2.7175357341766357,
+              "rmsDeltaMillimeters": 1.8051518201828003,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 3.244767904281616,
+              "rmsDeltaMillimeters": 1.8737304210662842,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "b8ae0068752d64ca3c2035d52def7b8449e354aae16c240fde005fcaf445edea"
+        },
+        "mouthPucker": {
+          "maximumDeltaMillimeters": 5.313494682312012,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.313494682312012,
+              "rmsDeltaMillimeters": 1.1286065578460693,
+              "movedVertexCountAbove0_01mm": 6355
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 3.531017780303955,
+              "rmsDeltaMillimeters": 2.3956961631774902,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 4.18805456161499,
+              "rmsDeltaMillimeters": 2.8630056381225586,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "6667598d1a53f3010e13dd88d7323080453a96e25ecdcb0a562e10e3d6b9b47a"
+        },
+        "tongueTipUp": {
+          "maximumDeltaMillimeters": 17.38748550415039,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.4893715381622314,
+              "rmsDeltaMillimeters": 0.49234840273857117,
+              "movedVertexCountAbove0_01mm": 6446
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 2.022996425628662,
+              "rmsDeltaMillimeters": 1.3648563623428345,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 17.38748550415039,
+              "rmsDeltaMillimeters": 7.356291770935059,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "a3b5b2f36c7e2a55dbc1c05a633fa72ca85c5cac7c7d60ed3fe5877345ed8360"
+        },
+        "jawForward": {
+          "maximumDeltaMillimeters": 3.0000061988830566,
+          "expectedComponents": [
+            "skin",
+            "lower_teeth",
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.7000010013580322,
+              "rmsDeltaMillimeters": 0.6770092248916626,
+              "movedVertexCountAbove0_01mm": 1424
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 3.0000061988830566,
+              "rmsDeltaMillimeters": 2.999936103820801,
+              "movedVertexCountAbove0_01mm": 1440
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 1.5000030994415283,
+              "rmsDeltaMillimeters": 1.5000025033950806,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "4ce7412bad24a7b76b1f317f393785e20e196fd31c793ed0fd4bb27130e85078"
+        },
+        "upperLipRaise": {
+          "maximumDeltaMillimeters": 2.8889212608337402,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.8889212608337402,
+              "rmsDeltaMillimeters": 0.44961562752723694,
+              "movedVertexCountAbove0_01mm": 3787
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "aef295d04b10c2c4f95b8c8bae207f4d4bb4aafaa7a9df09498e257d01db491c"
+        },
+        "lowerLipDepress": {
+          "maximumDeltaMillimeters": 2.5327651500701904,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.5327651500701904,
+              "rmsDeltaMillimeters": 0.4165010452270508,
+              "movedVertexCountAbove0_01mm": 3570
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "d29b3aec8a3927b63019ff8439424612c1d422d2acd9f4a499a5a66c2dc66247"
+        },
+        "lipCompress": {
+          "maximumDeltaMillimeters": 0.9528574347496033,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.9528574347496033,
+              "rmsDeltaMillimeters": 0.21852511167526245,
+              "movedVertexCountAbove0_01mm": 3364
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "8fcc855f5b84cabe4c2408357212735ea0c764a9df918baf52149394655c37d9"
+        },
+        "lipRollIn": {
+          "maximumDeltaMillimeters": 5.95764684677124,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.95764684677124,
+              "rmsDeltaMillimeters": 1.3032047748565674,
+              "movedVertexCountAbove0_01mm": 3960
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "4752b857afa88a6401b7f9cc3f0d5578dc870f1f8a1a831eca7b6dfe2f06b5ab"
+        },
+        "lipRollOut": {
+          "maximumDeltaMillimeters": 3.8590357303619385,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.8590357303619385,
+              "rmsDeltaMillimeters": 0.6598837971687317,
+              "movedVertexCountAbove0_01mm": 3608
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "0183543f2c391003c9b0b4462b53826432ea49d21a8b76da057b57d27a3a979d"
+        },
+        "mouthCornersUp": {
+          "maximumDeltaMillimeters": 4.427415370941162,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 4.427415370941162,
+              "rmsDeltaMillimeters": 0.8680789470672607,
+              "movedVertexCountAbove0_01mm": 3962
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "0095a4d99438e8625d3b4ed89495dbeb8e361a31374c46be2220d9603bcce86f"
+        },
+        "mouthCornersDown": {
+          "maximumDeltaMillimeters": 2.894251823425293,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.894251823425293,
+              "rmsDeltaMillimeters": 0.5118222832679749,
+              "movedVertexCountAbove0_01mm": 3589
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "d3b85ed2d51d192f25d128d83b4e7fe37043c853eb85c7aa34b1e2cab4edf4f3"
+        },
+        "mouthStretch": {
+          "maximumDeltaMillimeters": 5.222302436828613,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.222302436828613,
+              "rmsDeltaMillimeters": 1.0296778678894043,
+              "movedVertexCountAbove0_01mm": 3995
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "adb1ccd6c421216c40d52967faaf4ff63f1f6e12a788ff02732f42ef1c801a7a"
+        },
+        "tongueTipLateral": {
+          "maximumDeltaMillimeters": 12.66394329071045,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 12.66394329071045,
+              "rmsDeltaMillimeters": 5.111141204833984,
+              "movedVertexCountAbove0_01mm": 451
+            }
+          },
+          "runtimeDeltaSha256": "e9cb0f9f0d2b6c42f15a71b25de1bb36a9f5f4a64c0f9815720183c8ac929e72"
+        },
+        "tongueBladeUp": {
+          "maximumDeltaMillimeters": 3.531172752380371,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 3.531172752380371,
+              "rmsDeltaMillimeters": 0.9989404082298279,
+              "movedVertexCountAbove0_01mm": 361
+            }
+          },
+          "runtimeDeltaSha256": "03d94b96f76c764b3353b4e20be3f50506082317b939f15a93eb7788816bbd19"
+        },
+        "tongueBladeGroove": {
+          "maximumDeltaMillimeters": 6.60526180267334,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 6.60526180267334,
+              "rmsDeltaMillimeters": 2.6381680965423584,
+              "movedVertexCountAbove0_01mm": 447
+            }
+          },
+          "runtimeDeltaSha256": "2ae77bedf7081a76f5843bad9ef1045aca2f60c8714fef84dd06909c6b9019d9"
+        },
+        "tongueBodyHigh": {
+          "maximumDeltaMillimeters": 4.999995231628418,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 4.999995231628418,
+              "rmsDeltaMillimeters": 1.516409993171692,
+              "movedVertexCountAbove0_01mm": 410
+            }
+          },
+          "runtimeDeltaSha256": "88cef540a640c18626ac92d79c5402969377b859ab4750a6b2f1214e4790c588"
+        },
+        "tongueBodyBack": {
+          "maximumDeltaMillimeters": 7.28366756439209,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 7.28366756439209,
+              "rmsDeltaMillimeters": 2.273244619369507,
+              "movedVertexCountAbove0_01mm": 506
+            }
+          },
+          "runtimeDeltaSha256": "b4267c6e9d01365eb765546d013aab69dd737e43a934ce4ae305d21ce1da2b6c"
+        },
+        "tongueBodyLow": {
+          "maximumDeltaMillimeters": 3.499999523162842,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 3.499999523162842,
+              "rmsDeltaMillimeters": 1.1822996139526367,
+              "movedVertexCountAbove0_01mm": 459
+            }
+          },
+          "runtimeDeltaSha256": "df874dd5e3a09cef2a8e915f62e6f5cbc06ccec712afa13f888635ba384131fd"
+        },
+        "tongueForward": {
+          "maximumDeltaMillimeters": 2.9999985694885254,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 2.9999985694885254,
+              "rmsDeltaMillimeters": 2.1467814445495605,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "83cf7508f856c8c21d1a2444f96cd19707588d993c70d1e0bac228006609eb4d"
+        },
+        "tongueRetract": {
+          "maximumDeltaMillimeters": 2.9999985694885254,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 2.9999985694885254,
+              "rmsDeltaMillimeters": 2.1467812061309814,
+              "movedVertexCountAbove0_01mm": 933
+            }
+          },
+          "runtimeDeltaSha256": "e87e828e2365f0acb21b4f5d6803effef29bdc004fcb21aa7ce947b1805ddfe9"
+        },
+        "contactBilabial": {
+          "maximumDeltaMillimeters": 0.8316218256950378,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.8316218256950378,
+              "rmsDeltaMillimeters": 0.024936838075518608,
+              "movedVertexCountAbove0_01mm": 38
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "6df3d4f8157b9118d4253e1a33ce8711c920f49919752e43e3a29b35b688bc87"
+        },
+        "contactLabiodental": {
+          "maximumDeltaMillimeters": 4.499051570892334,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 4.499051570892334,
+              "rmsDeltaMillimeters": 0.17079401016235352,
+              "movedVertexCountAbove0_01mm": 42
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "10dd6f59d2d296bbf213d5f7792133a419ae5a043cf897f57c9e26f141d16f84"
+        },
+        "contactDental": {
+          "maximumDeltaMillimeters": 13.684906005859375,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 13.684906005859375,
+              "rmsDeltaMillimeters": 5.366871356964111,
+              "movedVertexCountAbove0_01mm": 402
+            }
+          },
+          "runtimeDeltaSha256": "f980912aeb3e957d9062c435d7b361a4e14e754b91a1b1b733e8323c3bda4520"
+        },
+        "contactAlveolar": {
+          "maximumDeltaMillimeters": 19.787418365478516,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 19.787418365478516,
+              "rmsDeltaMillimeters": 8.249696731567383,
+              "movedVertexCountAbove0_01mm": 451
+            }
+          },
+          "runtimeDeltaSha256": "9a80d2e727a14d03f46e4aa1bc1fa56a3acd7ee1f0a580a8e5b4f585213fbfec"
+        },
+        "contactLateral": {
+          "maximumDeltaMillimeters": 19.787418365478516,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 19.787418365478516,
+              "rmsDeltaMillimeters": 7.984900951385498,
+              "movedVertexCountAbove0_01mm": 451
+            }
+          },
+          "runtimeDeltaSha256": "a18906ab45ef176b3ce0af9b8578a8859c7b72f9ddbf8853cdf5d9d0120bdc56"
+        },
+        "correctiveSibilantGroove": {
+          "maximumDeltaMillimeters": 10.878307342529297,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 10.878307342529297,
+              "rmsDeltaMillimeters": 4.331750392913818,
+              "movedVertexCountAbove0_01mm": 451
+            }
+          },
+          "runtimeDeltaSha256": "8f328befa84b71766b81d1c186615f669afd15080314c8880a20f0eea36ac44f"
+        },
+        "contactVelar": {
+          "maximumDeltaMillimeters": 15.83405590057373,
+          "expectedComponents": [
+            "tongue"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 7.679882401134819e-06,
+              "rmsDeltaMillimeters": 7.938602948343032e-07,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 15.83405590057373,
+              "rmsDeltaMillimeters": 4.941835880279541,
+              "movedVertexCountAbove0_01mm": 509
+            }
+          },
+          "runtimeDeltaSha256": "d83e1cd543c6d2eadcf72c711073c67756695f89728a8d59ae80180546723edf"
+        },
+        "eyeOpen": {
+          "maximumDeltaMillimeters": 0.992425262928009,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.992425262928009,
+              "rmsDeltaMillimeters": 0.27786985039711,
+              "movedVertexCountAbove0_01mm": 3127
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "5189b94f64ad84286194ede85a5fa04a414f50a936473c07e3c9bf16f789d07d"
+        },
+        "blinkLeft": {
+          "maximumDeltaMillimeters": 5.23142671585083,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.23142671585083,
+              "rmsDeltaMillimeters": 0.8474528789520264,
+              "movedVertexCountAbove0_01mm": 1699
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "b75a0342e87446329ec935a4c3cc396f320683dc56a3f83e6bab7ac7b9c0ed91"
+        },
+        "blinkRight": {
+          "maximumDeltaMillimeters": 4.8361124992370605,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 4.8361124992370605,
+              "rmsDeltaMillimeters": 0.8559120297431946,
+              "movedVertexCountAbove0_01mm": 1703
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "1ff4f876ce82293aa179ce6f777039ac7207b6a6f59d0eab0528327c55d058bf"
+        },
+        "smile": {
+          "maximumDeltaMillimeters": 8.176640510559082,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 8.176640510559082,
+              "rmsDeltaMillimeters": 1.7968027591705322,
+              "movedVertexCountAbove0_01mm": 6555
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "4fa7d7a7daf66a99f0d1f7e43fa24c50a74a6f455731def3765cae26b95ea592"
+        },
+        "browConcern": {
+          "maximumDeltaMillimeters": 1.8017487525939941,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 1.8017487525939941,
+              "rmsDeltaMillimeters": 0.4001260995864868,
+              "movedVertexCountAbove0_01mm": 3163
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "3f3156209ffcd20d6ce756531cbb613ed7c635b924a37bed891503f791b82765"
+        },
+        "browLift": {
+          "maximumDeltaMillimeters": 2.7308530807495117,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.7308530807495117,
+              "rmsDeltaMillimeters": 0.4952699542045593,
+              "movedVertexCountAbove0_01mm": 3143
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "073b06fd2fbaaf9fbcdcc44919488e55dd18b36f669defd742b5aca4ad4d55f9"
+        },
+        "browLiftLeft": {
+          "maximumDeltaMillimeters": 3.388845443725586,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.388845443725586,
+              "rmsDeltaMillimeters": 0.4247986078262329,
+              "movedVertexCountAbove0_01mm": 1684
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "800f2755464e94faf08a36c59fc813313047b5c0adb5abdee7678f12df118e0b"
+        },
+        "browLiftRight": {
+          "maximumDeltaMillimeters": 2.4755074977874756,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.4755074977874756,
+              "rmsDeltaMillimeters": 0.3221207857131958,
+              "movedVertexCountAbove0_01mm": 1660
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "f61767e1d6497bbfa153f34b88962a7531dcabb8b73be5fcfaa8e5bdf5940951"
+        },
+        "browFurrow": {
+          "maximumDeltaMillimeters": 1.7835882902145386,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 1.7835882902145386,
+              "rmsDeltaMillimeters": 0.3788732886314392,
+              "movedVertexCountAbove0_01mm": 3157
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "ba4e6c232a52b65324cb490dc02f5827dd88ead965a0a688129fb22e11ff8002"
+        },
+        "eyeWiden": {
+          "maximumDeltaMillimeters": 2.858161449432373,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.858161449432373,
+              "rmsDeltaMillimeters": 0.8002654910087585,
+              "movedVertexCountAbove0_01mm": 3193
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "a4a049a075b92cea3bf41e1f91b305f05c1d075087c26910209d82a8ae49e994"
+        },
+        "eyeSquint": {
+          "maximumDeltaMillimeters": 2.858161449432373,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.858161449432373,
+              "rmsDeltaMillimeters": 0.8002654910087585,
+              "movedVertexCountAbove0_01mm": 3193
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "badb380fd5348f15ad42f808ed359901ab6a8d0273cc7ffdb4c9ab3fb5087a92"
+        },
+        "cheekRaise": {
+          "maximumDeltaMillimeters": 2.566640615463257,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 2.566640615463257,
+              "rmsDeltaMillimeters": 0.6710091233253479,
+              "movedVertexCountAbove0_01mm": 3189
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "026c13d5ef178ea33d4c15bf00d1aad048c6150fbc379e99e55928b97a08bc05"
+        },
+        "smileMouth": {
+          "maximumDeltaMillimeters": 13.617728233337402,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 13.617728233337402,
+              "rmsDeltaMillimeters": 3.0098049640655518,
+              "movedVertexCountAbove0_01mm": 4246
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "76d1363f11a290b44b45667b55b47c6dcbcecd5d6c60425177bff4e9c4c0f753"
+        },
+        "surpriseMouth": {
+          "maximumDeltaMillimeters": 7.582482814788818,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 7.582482814788818,
+              "rmsDeltaMillimeters": 1.351189374923706,
+              "movedVertexCountAbove0_01mm": 4002
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "4ff6062b1587d4cfadecfc9d6a6f75025074756524f90cc68d711354b1d7e4f3"
+        },
+        "concernMouth": {
+          "maximumDeltaMillimeters": 5.882538795471191,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 5.882538795471191,
+              "rmsDeltaMillimeters": 1.1438969373703003,
+              "movedVertexCountAbove0_01mm": 3969
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "e2163ec2d8eb72cef818ea9b400d3667863201afe9a19acf4936b670323ab2c7"
+        },
+        "curiosityMouth": {
+          "maximumDeltaMillimeters": 3.365473985671997,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.365473985671997,
+              "rmsDeltaMillimeters": 0.661690890789032,
+              "movedVertexCountAbove0_01mm": 3760
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "4c786e41d820118575c3bc3f926814c65cbad3ee5a4878f36747b5b9419f2b3d"
+        },
+        "emphasisMouth": {
+          "maximumDeltaMillimeters": 3.655918836593628,
+          "expectedComponents": [
+            "skin"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 3.655918836593628,
+              "rmsDeltaMillimeters": 0.9271647930145264,
+              "movedVertexCountAbove0_01mm": 4186
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "c1ef409b72148a259f5e3aeb4e44da3accc8129ef616c09ed8d0ee1f7e65ee0a"
+        },
+        "gazeLeft": {
+          "maximumDeltaMillimeters": 1.7536550760269165,
+          "expectedComponents": [
+            "eye_sclera",
+            "eye_iris",
+            "eye_pupil",
+            "eye_interior"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 1.7536550760269165,
+              "rmsDeltaMillimeters": 1.4445823431015015,
+              "movedVertexCountAbove0_01mm": 480
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 1.7110555171966553,
+              "rmsDeltaMillimeters": 1.6038371324539185,
+              "movedVertexCountAbove0_01mm": 290
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 1.576108694076538,
+              "rmsDeltaMillimeters": 1.5531456470489502,
+              "movedVertexCountAbove0_01mm": 98
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 1.7536550760269165,
+              "rmsDeltaMillimeters": 1.5065391063690186,
+              "movedVertexCountAbove0_01mm": 770
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "ff575cc268670e3ed41b449074379554e77b0e204b4c9037d761ea6e345521c1"
+        },
+        "gazeRight": {
+          "maximumDeltaMillimeters": 1.7536561489105225,
+          "expectedComponents": [
+            "eye_sclera",
+            "eye_iris",
+            "eye_pupil",
+            "eye_interior"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 1.7536561489105225,
+              "rmsDeltaMillimeters": 1.4445830583572388,
+              "movedVertexCountAbove0_01mm": 480
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 1.7110539674758911,
+              "rmsDeltaMillimeters": 1.6038380861282349,
+              "movedVertexCountAbove0_01mm": 290
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 1.5761128664016724,
+              "rmsDeltaMillimeters": 1.553146481513977,
+              "movedVertexCountAbove0_01mm": 98
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 1.7536561489105225,
+              "rmsDeltaMillimeters": 1.5065397024154663,
+              "movedVertexCountAbove0_01mm": 770
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "71e8b6492d4611199cd6e216b72c650fee1dd6f8220a88772085d49a5ab07018"
+        },
+        "gazeUp": {
+          "maximumDeltaMillimeters": 1.463127851486206,
+          "expectedComponents": [
+            "eye_sclera",
+            "eye_iris",
+            "eye_pupil",
+            "eye_interior"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 1.463127851486206,
+              "rmsDeltaMillimeters": 1.2043266296386719,
+              "movedVertexCountAbove0_01mm": 480
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 1.427112340927124,
+              "rmsDeltaMillimeters": 1.336819052696228,
+              "movedVertexCountAbove0_01mm": 290
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 1.3138667345046997,
+              "rmsDeltaMillimeters": 1.2945787906646729,
+              "movedVertexCountAbove0_01mm": 98
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 1.463127851486206,
+              "rmsDeltaMillimeters": 1.2558683156967163,
+              "movedVertexCountAbove0_01mm": 770
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "ac0157e2467f4791e70ae76d87faee78e3210ecaf6e6b96a95f1067790a662f5"
+        },
+        "gazeDown": {
+          "maximumDeltaMillimeters": 1.4631311893463135,
+          "expectedComponents": [
+            "eye_sclera",
+            "eye_iris",
+            "eye_pupil",
+            "eye_interior"
+          ],
+          "components": {
+            "skin": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "eye_sclera": {
+              "maximumDeltaMillimeters": 1.4631311893463135,
+              "rmsDeltaMillimeters": 1.2043203115463257,
+              "movedVertexCountAbove0_01mm": 480
+            },
+            "eye_iris": {
+              "maximumDeltaMillimeters": 1.4270607233047485,
+              "rmsDeltaMillimeters": 1.3368093967437744,
+              "movedVertexCountAbove0_01mm": 290
+            },
+            "eye_pupil": {
+              "maximumDeltaMillimeters": 1.3138459920883179,
+              "rmsDeltaMillimeters": 1.294569969177246,
+              "movedVertexCountAbove0_01mm": 98
+            },
+            "eye_interior": {
+              "maximumDeltaMillimeters": 1.4631311893463135,
+              "rmsDeltaMillimeters": 1.255860686302185,
+              "movedVertexCountAbove0_01mm": 770
+            },
+            "upper_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "lower_teeth": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            },
+            "tongue": {
+              "maximumDeltaMillimeters": 0.0,
+              "rmsDeltaMillimeters": 0.0,
+              "movedVertexCountAbove0_01mm": 0
+            }
+          },
+          "runtimeDeltaSha256": "1de9cb9f02db4632770aec8a33ed8538dd41815d4e8d3b1008e478fcfa4c8cd9"
+        }
+      }
+    },
+    "expressionIsolationAudit": {
+      "passed": true,
+      "thresholdsMillimeters": {
+        "oralAndOcularIsolationMaximum": 0.001,
+        "minimumIntendedMovement": 0.01,
+        "gazeMinimumIrisAxisMovement": 0.5,
+        "gazeMaximumCrossAxisMovement": 0.02,
+        "gazeMaximumLeftRightRmsMismatch": 0.02,
+        "bilateralSymmetryMaximumError": 0.001,
+        "lowerFaceInternalIsolationMaximum": 0.001
+      },
+      "upperFaceTargets": {
+        "eyeOpen": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 0.992425262928009,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.332001142553054e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.405571861658245e-06,
+          "passed": true
+        },
+        "blinkLeft": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 5.23142671585083,
+          "passed": true
+        },
+        "blinkRight": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 4.8361124992370605,
+          "passed": true
+        },
+        "browConcern": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 1.8017487525939941,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.332001142553054e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.295697625726461e-06,
+          "passed": true
+        },
+        "browLift": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 2.7308530807495117,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.332001142553054e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.290729056170676e-06,
+          "passed": true
+        },
+        "browLiftLeft": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 3.388845443725586,
+          "passed": true
+        },
+        "browLiftRight": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 2.4755074977874756,
+          "passed": true
+        },
+        "browFurrow": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 1.7835882902145386,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.161013592034578e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.090637493296526e-06,
+          "passed": true
+        },
+        "eyeWiden": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 2.858161449432373,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.332001142553054e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.098324542515911e-06,
+          "passed": true
+        },
+        "eyeSquint": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 2.858161449432373,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.332001142553054e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.096792953438126e-06,
+          "passed": true
+        },
+        "cheekRaise": {
+          "oralMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "skinMaximumDeltaMillimeters": 2.566640615463257,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.094458224950358e-05,
+          "bilateralSymmetryRmsErrorMillimeters": 8.207107384805568e-06,
+          "passed": true
+        }
+      },
+      "lowerFaceExpressionTargets": {
+        "smileMouth": {
+          "skinMaximumDeltaMillimeters": 13.617728233337402,
+          "oralMaximumDeltaMillimeters": 13.617728233337402,
+          "internalComponentMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "upperDentalMaximumDeltaMillimeters": 0.0,
+          "lowerDentalMaximumDeltaMillimeters": 0.0,
+          "tongueMaximumDeltaMillimeters": 0.0,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.337203088449314e-05,
+          "passed": true
+        },
+        "surpriseMouth": {
+          "skinMaximumDeltaMillimeters": 7.582482814788818,
+          "oralMaximumDeltaMillimeters": 7.582482814788818,
+          "internalComponentMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "upperDentalMaximumDeltaMillimeters": 0.0,
+          "lowerDentalMaximumDeltaMillimeters": 0.0,
+          "tongueMaximumDeltaMillimeters": 0.0,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.337203088449314e-05,
+          "passed": true
+        },
+        "concernMouth": {
+          "skinMaximumDeltaMillimeters": 5.882538795471191,
+          "oralMaximumDeltaMillimeters": 5.882538795471191,
+          "internalComponentMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "upperDentalMaximumDeltaMillimeters": 0.0,
+          "lowerDentalMaximumDeltaMillimeters": 0.0,
+          "tongueMaximumDeltaMillimeters": 0.0,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.3333024475723505e-05,
+          "passed": true
+        },
+        "curiosityMouth": {
+          "skinMaximumDeltaMillimeters": 3.365473985671997,
+          "oralMaximumDeltaMillimeters": 3.365473985671997,
+          "internalComponentMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "upperDentalMaximumDeltaMillimeters": 0.0,
+          "lowerDentalMaximumDeltaMillimeters": 0.0,
+          "tongueMaximumDeltaMillimeters": 0.0,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.3333024475723505e-05,
+          "passed": true
+        },
+        "emphasisMouth": {
+          "skinMaximumDeltaMillimeters": 3.655918836593628,
+          "oralMaximumDeltaMillimeters": 3.655918836593628,
+          "internalComponentMaximumDeltaMillimeters": 0.0,
+          "ocularMaximumDeltaMillimeters": 0.0,
+          "upperDentalMaximumDeltaMillimeters": 0.0,
+          "lowerDentalMaximumDeltaMillimeters": 0.0,
+          "tongueMaximumDeltaMillimeters": 0.0,
+          "bilateralSymmetryMaximumErrorMillimeters": 3.3333024475723505e-05,
+          "passed": true
+        }
+      },
+      "gazeTargets": {
+        "gazeLeft": {
+          "ocularMaximumDeltaMillimeters": 1.9455475807189941,
+          "outsideOcularMaximumDeltaMillimeters": 0.0,
+          "irisMeanDeltaMillimeters": [
+            1.5647783279418945,
+            0.0,
+            -0.09304362535476685
+          ],
+          "intendedAxis": "x",
+          "intendedAxisDeltaMillimeters": 1.5647783279418945,
+          "crossAxisDeltaMillimeters": 0.0,
+          "leftEyeRmsDeltaMillimeters": 1.5236613750457764,
+          "rightEyeRmsDeltaMillimeters": 1.5235651731491089,
+          "passed": true
+        },
+        "gazeRight": {
+          "ocularMaximumDeltaMillimeters": 1.9455478191375732,
+          "outsideOcularMaximumDeltaMillimeters": 0.0,
+          "irisMeanDeltaMillimeters": [
+            -1.564664602279663,
+            0.0,
+            -0.09494932740926743
+          ],
+          "intendedAxis": "x",
+          "intendedAxisDeltaMillimeters": -1.564664602279663,
+          "crossAxisDeltaMillimeters": 0.0,
+          "leftEyeRmsDeltaMillimeters": 1.5236626863479614,
+          "rightEyeRmsDeltaMillimeters": 1.5235646963119507,
+          "passed": true
+        },
+        "gazeUp": {
+          "ocularMaximumDeltaMillimeters": 1.6216652393341064,
+          "outsideOcularMaximumDeltaMillimeters": 0.0,
+          "irisMeanDeltaMillimeters": [
+            0.0,
+            1.3053396940231323,
+            -0.05649847164750099
+          ],
+          "intendedAxis": "y",
+          "intendedAxisDeltaMillimeters": 1.3053396940231323,
+          "crossAxisDeltaMillimeters": 0.0,
+          "leftEyeRmsDeltaMillimeters": 1.270064353942871,
+          "rightEyeRmsDeltaMillimeters": 1.2699934244155884,
+          "passed": true
+        },
+        "gazeDown": {
+          "ocularMaximumDeltaMillimeters": 1.6216341257095337,
+          "outsideOcularMaximumDeltaMillimeters": 0.0,
+          "irisMeanDeltaMillimeters": [
+            0.0,
+            -1.304449439048767,
+            -0.07409132272005081
+          ],
+          "intendedAxis": "y",
+          "intendedAxisDeltaMillimeters": -1.304449439048767,
+          "crossAxisDeltaMillimeters": 0.0,
+          "leftEyeRmsDeltaMillimeters": 1.2700673341751099,
+          "rightEyeRmsDeltaMillimeters": 1.2699801921844482,
+          "passed": true
+        }
+      }
+    },
+    "anatomicalCorrections": {
+      "viseme_MBP": {
+        "anatomicalCorrection": "bilabial_seal",
+        "maxCorrectionMillimeters": 0.88236004114151
+      },
+      "viseme_FV": {
+        "anatomicalCorrection": "labiodental_contact",
+        "maxCorrectionMillimeters": 3.7339770793914795
+      },
+      "viseme_L": {
+        "anatomicalCorrection": "lateral_contact",
+        "maxCorrectionMillimeters": 18.73842430114746
+      },
+      "viseme_TH": {
+        "anatomicalCorrection": "dental_protrusion",
+        "maxCorrectionMillimeters": 1.6628507375717163
+      },
+      "viseme_TDN": {
+        "anatomicalCorrection": "alveolar_stop_contact",
+        "maxCorrectionMillimeters": 18.343524932861328
+      },
+      "viseme_SZ": {
+        "anatomicalCorrection": "sibilant_groove",
+        "maxCorrectionMillimeters": 12.029707908630371
+      },
+      "viseme_CHSH": {
+        "anatomicalCorrection": "postalveolar_groove",
+        "maxCorrectionMillimeters": 9.76955509185791
+      },
+      "viseme_KG": {
+        "anatomicalCorrection": "velar_contact",
+        "maxCorrectionMillimeters": 16.34673500061035
+      },
+      "viseme_R": {
+        "anatomicalCorrection": "rhotic_bunch",
+        "maxCorrectionMillimeters": 9.692521095275879
+      },
+      "viseme_WQ": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.3319442570209503
+      },
+      "vowel_AA": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.28289011120796204
+      },
+      "vowel_AE": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.17764444649219513
+      },
+      "vowel_AH": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.2144223004579544
+      },
+      "vowel_EH": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.11112901568412781
+      },
+      "vowel_IH": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0975598618388176
+      },
+      "vowel_EE": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.3021668493747711
+      },
+      "vowel_OH": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.17990557849407196
+      },
+      "vowel_OO": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.25196361541748047
+      },
+      "jawOpen": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.3157027065753937
+      },
+      "mouthFunnel": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.25169554352760315
+      },
+      "mouthPucker": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.3607718050479889
+      },
+      "tongueTipUp": {
+        "anatomicalCorrection": "alveolar_stop_contact",
+        "maxCorrectionMillimeters": 18.73842430114746
+      },
+      "jawForward": {
+        "anatomicalCorrection": "jaw_forward",
+        "maxCorrectionMillimeters": 3.0000061988830566
+      },
+      "upperLipRaise": {
+        "anatomicalCorrection": "upper_lip_raise",
+        "maxCorrectionMillimeters": 2.054199695587158
+      },
+      "lowerLipDepress": {
+        "anatomicalCorrection": "lower_lip_depress",
+        "maxCorrectionMillimeters": 2.0462801456451416
+      },
+      "lipCompress": {
+        "anatomicalCorrection": "lip_compress",
+        "maxCorrectionMillimeters": 0.9632050395011902
+      },
+      "lipRollIn": {
+        "anatomicalCorrection": "lip_roll_in",
+        "maxCorrectionMillimeters": 3.6245012283325195
+      },
+      "lipRollOut": {
+        "anatomicalCorrection": "lip_roll_out",
+        "maxCorrectionMillimeters": 2.139352798461914
+      },
+      "mouthCornersUp": {
+        "anatomicalCorrection": "corners_up",
+        "maxCorrectionMillimeters": 2.049454689025879
+      },
+      "mouthCornersDown": {
+        "anatomicalCorrection": "corners_down",
+        "maxCorrectionMillimeters": 2.0786828994750977
+      },
+      "mouthStretch": {
+        "anatomicalCorrection": "mouth_stretch",
+        "maxCorrectionMillimeters": 3.090696334838867
+      },
+      "tongueTipLateral": {
+        "anatomicalCorrection": "lateral_pose",
+        "maxCorrectionMillimeters": 12.66394329071045
+      },
+      "tongueBladeUp": {
+        "anatomicalCorrection": "tongue_blade_up",
+        "maxCorrectionMillimeters": 3.531172752380371
+      },
+      "tongueBladeGroove": {
+        "anatomicalCorrection": "tongue_blade_groove_pose",
+        "maxCorrectionMillimeters": 6.60526180267334
+      },
+      "tongueBodyHigh": {
+        "anatomicalCorrection": "tongue_body_high",
+        "maxCorrectionMillimeters": 4.999995231628418
+      },
+      "tongueBodyBack": {
+        "anatomicalCorrection": "tongue_body_back",
+        "maxCorrectionMillimeters": 7.28366756439209
+      },
+      "tongueBodyLow": {
+        "anatomicalCorrection": "tongue_body_low",
+        "maxCorrectionMillimeters": 3.499999523162842
+      },
+      "tongueForward": {
+        "anatomicalCorrection": "tongue_forward",
+        "maxCorrectionMillimeters": 2.9999985694885254
+      },
+      "tongueRetract": {
+        "anatomicalCorrection": "tongue_retract",
+        "maxCorrectionMillimeters": 2.9999985694885254
+      },
+      "contactBilabial": {
+        "anatomicalCorrection": "bilabial_seal",
+        "maxCorrectionMillimeters": 0.8316218256950378
+      },
+      "contactLabiodental": {
+        "anatomicalCorrection": "labiodental_contact",
+        "maxCorrectionMillimeters": 4.499051570892334
+      },
+      "contactDental": {
+        "anatomicalCorrection": "dental_contact",
+        "maxCorrectionMillimeters": 13.684906005859375
+      },
+      "contactAlveolar": {
+        "anatomicalCorrection": "alveolar_stop_contact",
+        "maxCorrectionMillimeters": 19.787418365478516
+      },
+      "contactLateral": {
+        "anatomicalCorrection": "lateral_contact",
+        "maxCorrectionMillimeters": 19.787418365478516
+      },
+      "correctiveSibilantGroove": {
+        "anatomicalCorrection": "tongue_blade_groove",
+        "maxCorrectionMillimeters": 10.878307342529297
+      },
+      "contactVelar": {
+        "anatomicalCorrection": "velar_contact",
+        "maxCorrectionMillimeters": 15.83405590057373
+      },
+      "eyeOpen": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.09039674699306488
+      },
+      "blinkLeft": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "blinkRight": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "smile": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 2.0398495197296143
+      },
+      "browConcern": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.27740389108657837
+      },
+      "browLift": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.4493270814418793
+      },
+      "browLiftLeft": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "browLiftRight": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "browFurrow": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.22656802833080292
+      },
+      "eyeWiden": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.260328471660614
+      },
+      "eyeSquint": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.260328471660614
+      },
+      "cheekRaise": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.21191656589508057
+      },
+      "smileMouth": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 3.4785385131835938
+      },
+      "surpriseMouth": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 4.884565353393555
+      },
+      "concernMouth": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 2.7865679264068604
+      },
+      "curiosityMouth": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 2.1969189643859863
+      },
+      "emphasisMouth": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 3.604684352874756
+      },
+      "gazeLeft": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "gazeRight": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "gazeUp": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "gazeDown": {
+        "anatomicalCorrection": null,
+        "maxCorrectionMillimeters": 0.0
+      },
+      "symmetry": {
+        "matchedPairs": 957,
+        "centerVertices": 101,
+        "note": "Only oral morph deltas are symmetrized; neutral-shape asymmetry is preserved."
+      }
+    },
+    "note": "Named targets start in GNM's learned expression space, then receive bounded deterministic speech-contact, symmetry, ocular-stability, and dental-rigidity corrections. Upper-face targets are oral-locked; gaze is baked from paired native eye-joint poses and hard-masked to ocular geometry. They are anatomically informed, not forensic."
+  },
+  "artifact": {
+    "path": "demo/public/assets/models/gnm-neutral.glb",
+    "bytes": 24298424
+  }
+}

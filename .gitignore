@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+demo/node_modules/
+demo/dist/
+demo/test-results/
+demo/playwright-report/
+demo/artifacts/
+tools/.venv/
+__pycache__/
+*.pyc
+research/GNM/
+/netlify.toml
+/tmp/
