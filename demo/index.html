@@ -3,504 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#030509" />
+    <meta name="theme-color" content="#070b0d" />
     <meta
       name="description"
-      content="An open Three.js talking-avatar demo powered by Google GNM, local WebGPU models, browser speech, and native facial articulation."
+      content="A massively multiplayer game of Twenty Questions with an AI secret keeper and Solana-ready payments."
     />
-    <title>GNM + Three.js Talking Avatar</title>
+    <title>The Keeper — Multiplayer Twenty Questions</title>
   </head>
-  <body data-model="loading" data-speech="idle">
-    <main id="app">
-      <canvas
-        id="portrait-canvas"
-        aria-label="Interactive population-mean GNM head. Drag to rotate and scroll to change distance."
-      ></canvas>
-
+  <body>
+    <main id="app" class="game-shell">
       <header class="masthead">
-        <a class="wordmark" href="#speech-studio" aria-label="GNM + Three.js Talking Avatar home">
-          <span class="wordmark-mark" aria-hidden="true">G∕00</span>
-          <span class="wordmark-copy">
-            <strong>GNM + Three.js</strong>
-            <small>Talking Avatar</small>
-          </span>
+        <a class="brand" href="#game" aria-label="The Keeper home">
+          <span class="brand-mark" aria-hidden="true">?</span>
+          <span><strong>THE KEEPER</strong><small>Massively multiplayer 20 questions</small></span>
         </a>
-        <div class="model-index" aria-label="Model information">
-          <span>GNM HEAD</span>
-          <strong>v3.0</strong>
-          <span>MEAN IDENTITY</span>
-          <span>67 MORPHS</span>
+        <div class="network-cluster">
+          <span id="network-dot" class="network-dot"></span>
+          <span id="network-label">CONNECTING</span>
+          <span id="payment-label">—</span>
         </div>
       </header>
 
-      <aside class="scene-note" aria-label="Head controls">
-        <p><span class="scene-note-index">01</span> Drag to inspect. Scroll to move closer.</p>
-        <button id="open-evidence" class="text-button" type="button">
-          About the rig <span aria-hidden="true">↗</span>
-        </button>
-        <a
-          class="text-button"
-          href="https://github.com/majidmanzarpour/threejs-talking-avatar"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub <span aria-hidden="true">↗</span>
-        </a>
-      </aside>
-
-      <section id="speech-studio" class="speech-studio" aria-labelledby="studio-title">
-        <div class="studio-kicker">
-          <span>INTERACTIVE DEMO</span>
-          <span class="live-mark"><i aria-hidden="true"></i> ON DEVICE</span>
-        </div>
-
-        <div class="studio-heading">
-          <p class="section-number">02 / LIVE AVATAR</p>
-          <h1 id="studio-title">Meet your local talking avatar.</h1>
-          <p>
-            Speak naturally and watch a local agent listen, think, answer, and articulate in real
-            time. Choose a brain and voice below—the full conversation runs in your browser.
-          </p>
-        </div>
-
-        <section class="conversation-console" aria-labelledby="conversation-status-label">
-          <div class="conversation-status-row">
-            <span id="conversation-status-label">DEMO STATUS</span>
-            <span id="agent-state" data-state="idle" role="status" aria-live="polite" aria-atomic="true">ready to load</span>
+      <section id="game" class="game-grid">
+        <section class="keeper-stage" aria-labelledby="round-title">
+          <canvas
+            id="portrait-canvas"
+            aria-label="The AI secret keeper. Drag to rotate and scroll to change distance."
+          ></canvas>
+          <div class="stage-vignette" aria-hidden="true"></div>
+          <div class="round-identity">
+            <span id="round-number">ROUND 001</span>
+            <h1 id="round-title">Ask carefully.<br />The Keeper knows.</h1>
+            <p>One secret. Twenty paid questions. One winner takes the pot.</p>
           </div>
-
-          <div class="conversation-actions">
-            <button id="talk-button" class="primary-button talk-button" type="button">
-              <span>Load models + start demo</span>
-              <span class="talk-glyph" aria-hidden="true">◉</span>
-            </button>
-            <button id="conversation-stop-button" class="square-button conversation-stop-button" type="button" disabled>
-              <span>Mic stopped</span><i aria-hidden="true">■</i>
-            </button>
+          <div class="keeper-state">
+            <span class="pulse" aria-hidden="true"></span>
+            <span id="keeper-status">WAKING THE KEEPER</span>
+            <small id="model-status">loading native GNM head</small>
           </div>
-
-          <section
-            id="voice-monitor"
-            class="voice-monitor"
-            data-mic="off"
-            data-phase="off"
-            aria-labelledby="mic-status"
-          >
-            <div class="mic-instrument">
-              <div class="mic-beacon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" focusable="false">
-                  <path d="M12 3.25a3.2 3.2 0 0 0-3.2 3.2v5.1a3.2 3.2 0 1 0 6.4 0v-5.1a3.2 3.2 0 0 0-3.2-3.2Z" />
-                  <path d="M6.55 10.8v.75a5.45 5.45 0 0 0 10.9 0v-.75M12 17v3.25M9.2 20.25h5.6" />
-                </svg>
-              </div>
-              <div class="mic-copy">
-                <span>MICROPHONE INPUT</span>
-                <strong id="mic-status">MICROPHONE PAUSED</strong>
-                <p id="mic-detail">Input is off. Start listening when you’re ready.</p>
-              </div>
-              <span id="mic-level-value" class="mic-level-value" aria-hidden="true">00</span>
-            </div>
-
-            <div
-              id="mic-level-meter"
-              class="mic-level-meter"
-              role="meter"
-              aria-label="Live microphone input level"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              aria-valuenow="0"
-            >
-              <i style="--gain: .52"></i><i style="--gain: .68"></i>
-              <i style="--gain: .84"></i><i style="--gain: 1.05"></i>
-              <i style="--gain: .72"></i><i style="--gain: 1.18"></i>
-              <i style="--gain: .92"></i><i style="--gain: 1.35"></i>
-              <i style="--gain: 1.02"></i><i style="--gain: 1.26"></i>
-              <i style="--gain: .82"></i><i style="--gain: 1.12"></i>
-              <i style="--gain: .7"></i><i style="--gain: .96"></i>
-              <i style="--gain: .62"></i><i style="--gain: .78"></i>
-            </div>
-
-            <ol class="voice-phase-rail" aria-label="Local response pipeline">
-              <li data-voice-stage="listen">
-                <span>01</span><b>LISTEN</b><em id="listen-stage-detail">Moonshine Tiny q8</em>
-              </li>
-              <li data-voice-stage="hear">
-                <span>02</span><b>HEAR</b><em id="hear-stage-detail">waiting</em>
-              </li>
-              <li data-voice-stage="think">
-                <span>03</span><b>THINK</b><em id="think-stage-detail">waiting</em>
-              </li>
-              <li data-voice-stage="speak">
-                <span>04</span><b>SPEAK</b><em id="speak-stage-detail">waiting</em>
-              </li>
-            </ol>
-
-            <dl class="latency-strip" aria-label="Live local pipeline latency">
-              <div>
-                <dt>FIRST TOKEN</dt>
-                <dd id="latency-llm">—</dd>
-              </div>
-              <div>
-                <dt>FIRST CLAUSE</dt>
-                <dd id="latency-clause">—</dd>
-              </div>
-              <div>
-                <dt>TTS SYNTH</dt>
-                <dd id="latency-tts">—</dd>
-              </div>
-              <div>
-                <dt>TURN → AUDIO</dt>
-                <dd id="latency-audio">—</dd>
-              </div>
-            </dl>
-          </section>
-
-          <div class="conversation-turns" aria-live="polite">
-            <div class="conversation-turn conversation-turn--user">
-              <span>YOU</span>
-              <p id="user-transcript">Start the demo, then speak naturally.</p>
-            </div>
-            <details id="agent-thinking-panel" class="conversation-thinking" aria-live="off" hidden>
-              <summary>
-                <span>LOCAL THOUGHT</span>
-                <em>visible here · never spoken</em>
-              </summary>
-              <p id="agent-thinking"></p>
-            </details>
-            <div class="conversation-turn conversation-turn--agent">
-              <span>AVATAR</span>
-              <p id="agent-reply">Your avatar’s reply will appear here. First run downloads the selected local models once.</p>
-            </div>
-          </div>
-
-          <div class="model-progress-list" aria-label="Local model readiness">
-            <div class="model-progress" data-model-id="moonshine-tiny-q8">
-              <span><b>LISTEN</b> Moonshine Tiny</span><em id="stt-model-state">34 MB</em><i></i>
-            </div>
-            <div class="model-progress" data-model-id="gemma-4-e2b-it-litert-web">
-              <span><b>THINK</b> Gemma 4 E2B</span><em id="brain-model-state">2.0 GB</em><i></i>
-            </div>
-            <div class="model-progress" data-model-id="kokoro-82m-timestamped-fp32-webgpu">
-              <span><b>SPEAK</b> Kokoro Timestamped fp32</span><em id="tts-model-state">326 MB</em><i></i>
-            </div>
-          </div>
+          <div class="stage-instruction">DRAG TO INSPECT · SCROLL TO ZOOM</div>
         </section>
 
-        <details class="model-manager">
-            <summary>Local model manager <span id="local-runtime-summary">checking browser…</span></summary>
-            <div class="runtime-matrix" aria-label="Independent local runtime selection">
-              <article class="runtime-lane" data-runtime-lane="brain">
-                <header>
-                  <span class="runtime-lane-index">01</span>
-                  <div><strong>BRAIN</strong><small>reply intelligence</small></div>
-                  <output id="brain-runtime-status" data-state="cold">COLD</output>
-                </header>
-                <label for="brain-model-select">
-                  <span>Model</span>
-                  <select id="brain-model-select">
-                    <option value="gemma-4-e2b-it-litert-web" selected>Gemma 4 E2B · smart · 2.0 GB</option>
-                    <option value="qwen3.5-2b-q4f16">Qwen3.5 2B · balanced · 1.1 GB</option>
-                    <option value="qwen2.5-0.5b-instruct-q4f16">Qwen2.5 0.5B · instant · 290 MB</option>
-                    <option value="qwen3.5-0.8b-q4f16">Qwen3.5 0.8B · light · 447 MB</option>
-                    <option value="qwen3.5-4b-q4f16">Qwen3.5 4B · quality · 1.6 GB</option>
-                    <option value="gemma-4-e4b-it-litert-web">Gemma 4 E4B · high memory · 3.0 GB</option>
-                    <option value="gemma-3-1b-it-q4f16" disabled>Gemma 3 1B · adapter pending</option>
-                  </select>
-                </label>
-                <div class="runtime-lane-copy" aria-live="polite">
-                  <strong id="brain-model-detail-name">Gemma 4 E2B</strong>
-                  <p id="brain-model-detail">Browser-optimized LiteRT-LM intelligence.</p>
-                  <footer>
-                    <small id="brain-model-footprint">2.0 GB download · additional GPU working memory</small>
-                    <span id="brain-runtime-latency">FIRST TOKEN —</span>
-                  </footer>
-                </div>
-              </article>
+        <section class="game-console" aria-label="Twenty Questions game controls">
+          <div class="stats-row">
+            <article><span>POT</span><strong id="pot-value">0.00 SOL</strong></article>
+            <article><span>QUESTIONS LEFT</span><strong id="turns-value">20</strong></article>
+            <article><span>CATEGORY</span><strong id="category-value">—</strong></article>
+          </div>
 
-              <article class="runtime-lane" data-runtime-lane="voice">
-                <header>
-                  <span class="runtime-lane-index">02</span>
-                  <div><strong>VOICE</strong><small>speech synthesis</small></div>
-                  <output id="tts-runtime-status" data-state="cold">COLD</output>
-                </header>
-                <label for="tts-model-select">
-                  <span>Engine</span>
-                  <select id="tts-model-select">
-                    <option value="supertonic-2-instant-webgpu">Supertonic 2 · instant · 2 steps</option>
-                    <option value="supertonic-2-quality-webgpu">Supertonic 2 · quality · 5 steps</option>
-                    <option value="kitten-tts-nano-0.8-fp32-webgpu">KittenTTS Nano · tiny / fastest comparison</option>
-                    <option value="kokoro-82m-timestamped-fp32-webgpu" selected>Kokoro timestamped fp32 · best lip-sync</option>
-                    <option value="kokoro-82m-timestamped-q8-wasm">Kokoro timestamped q8 · 92 MB / native timing</option>
-                    <option value="kokoro-82m-q8-wasm">Kokoro q8 WASM · 92 MB</option>
-                    <option value="kokoro-82m-fp32-webgpu">Kokoro fp32 WebGPU · 326 MB</option>
-                  </select>
-                </label>
-                <div class="runtime-lane-copy" aria-live="polite">
-                  <strong id="tts-model-detail-name">Kokoro Timestamped fp32</strong>
-                  <p id="tts-model-detail">WebGPU voice synthesis with native phone durations.</p>
-                  <footer>
-                    <small id="tts-model-footprint">326 MB download · WebGPU · synthesis-native timestamps</small>
-                    <span id="tts-runtime-latency">SYNTH —</span>
-                  </footer>
-                </div>
-              </article>
-
-              <article class="runtime-lane" data-runtime-lane="timing">
-                <header>
-                  <span class="runtime-lane-index">03</span>
-                  <div><strong>LIP SYNC</strong><small>GNM timing policy</small></div>
-                  <output id="timing-runtime-status" data-state="active">ACTIVE</output>
-                </header>
-                <label for="lip-sync-timing-select">
-                  <span>Timing</span>
-                  <select id="lip-sync-timing-select">
-                    <option value="auto" selected>Auto · best available</option>
-                    <option value="native">Native · provider timing</option>
-                    <option value="waveform">Waveform · acoustic refine</option>
-                    <option value="heuristic">Heuristic · phoneme duration</option>
-                  </select>
-                </label>
-                <div class="runtime-lane-copy" aria-live="polite">
-                  <strong id="timing-mode-detail-name">Acoustic refinement</strong>
-                  <p id="timing-mode-detail">IPA windows refined by local energy, voicing, and transient cues.</p>
-                  <footer>
-                    <small id="timing-mode-footprint">No model download · deterministic browser DSP</small>
-                    <span id="timing-runtime-latency">AUDIO START —</span>
-                  </footer>
-                </div>
-              </article>
-
-              <article class="runtime-lane" data-runtime-lane="mic">
-                <header>
-                  <span class="runtime-lane-index">04</span>
-                  <div><strong>MIC INPUT</strong><small>speech recognition</small></div>
-                  <output id="stt-runtime-status" data-state="cold">COLD</output>
-                </header>
-                <label for="stt-model-select">
-                  <span>Model</span>
-                  <select id="stt-model-select">
-                    <option value="moonshine-tiny-q8">Moonshine Tiny q8 · 34 MB</option>
-                    <option value="whisper-tiny-en-q8">Whisper Tiny.en q8 · 42 MB</option>
-                  </select>
-                </label>
-                <div class="runtime-lane-copy" aria-live="polite">
-                  <strong id="stt-model-detail-name">Moonshine Tiny q8</strong>
-                  <p id="stt-model-detail">Low-latency English speech recognition for local conversation.</p>
-                  <footer>
-                    <small id="stt-model-footprint">34 MB download · CPU/WASM recognition</small>
-                    <span id="stt-runtime-latency">TRANSCRIBE —</span>
-                  </footer>
-                </div>
-              </article>
+          <section class="proof-card" aria-labelledby="proof-title">
+            <div>
+              <span>ON-CHAIN FAIRNESS</span>
+              <strong id="proof-title">Secret committed before question one</strong>
             </div>
-
-            <div class="runtime-utility-row">
-              <div class="runtime-actions" aria-label="Local runtime actions">
-                <button id="warm-runtime-button" type="button">Warm</button>
-                <button id="reload-runtime-button" type="button">Reload</button>
-                <button id="unload-runtime-button" type="button">Unload</button>
-              </div>
-              <p id="runtime-action-status" role="status" aria-live="polite">Models load only when you ask.</p>
-            </div>
-            <p id="model-manager-note">
-              Model inference stays on this device. Starting the demo confirms each model’s
-              one-time download; switching a model unloads its previous runtime first.
-            </p>
-            <dl class="runtime-diagnostics">
-              <div><dt>WebGPU</dt><dd id="webgpu-diagnostic">checking</dd></div>
-              <div><dt>Cache</dt><dd id="cache-diagnostic">checking</dd></div>
-              <div><dt>Local loop</dt><dd>zero cloud calls</dd></div>
-            </dl>
-        </details>
-
-        <details class="direct-speech">
-          <summary>Try any written phrase <span>ElevenLabs voice + timed lip sync</span></summary>
-
-          <section
-            id="elevenlabs-key-manager"
-            class="api-key-manager"
-            data-configured="false"
-            aria-labelledby="api-key-title"
-          >
-            <header>
-              <span class="api-key-index">OPTIONAL CLOUD VOICE</span>
-              <strong id="api-key-title">Connect ElevenLabs</strong>
-              <p>
-                Add your own API key to generate a one-off phrase. The local conversation demo
-                above does not need this key.
-              </p>
-            </header>
-            <form id="elevenlabs-key-form" class="api-key-form">
-              <label for="elevenlabs-api-key">ElevenLabs API key</label>
-              <div class="api-key-input-row">
-                <input
-                  id="elevenlabs-api-key"
-                  type="password"
-                  inputmode="text"
-                  autocomplete="off"
-                  autocapitalize="off"
-                  spellcheck="false"
-                  placeholder="Paste your API key"
-                  aria-describedby="api-key-security"
-                />
-                <button id="save-elevenlabs-api-key" type="submit">Save locally</button>
-                <button id="clear-elevenlabs-api-key" type="button" disabled>Clear</button>
-              </div>
-            </form>
-            <div class="api-key-status-row">
-              <span id="elevenlabs-api-key-status" role="status" aria-live="polite">API key required</span>
-              <span id="elevenlabs-api-key-mask">not configured</span>
-            </div>
-            <p id="api-key-security" class="api-key-security">
-              Stored in this origin’s local storage and sent directly to ElevenLabs when you
-              generate. Site scripts can read it—use a restricted, low-quota key and never save one
-              on a shared device.
-            </p>
+            <button id="copy-commitment" class="hash-button" type="button" title="Copy commitment hash">
+              <code id="commitment-value">awaiting round…</code>
+              <span aria-hidden="true">COPY</span>
+            </button>
+            <p id="proof-status">The reveal can be checked against this SHA-256 commitment when the round ends.</p>
           </section>
 
-          <div class="phrase-field">
-            <label for="phrase-input">Phrase</label>
-            <textarea
-              id="phrase-input"
-              maxlength="1000"
-              rows="4"
-              spellcheck="true"
-            >The important thing is not to stop questioning. Curiosity has its own reason for existing.</textarea>
-            <div class="field-meta">
-              <span>⌘ / Ctrl + Enter to speak</span>
-              <span id="character-count">0 / 1000</span>
+          <section class="identity-card" aria-labelledby="identity-title">
+            <div class="identity-heading">
+              <div><span>PLAYER IDENTITY</span><strong id="identity-title">Join the round</strong></div>
+              <span id="identity-address">NOT CONNECTED</span>
             </div>
-          </div>
-
-          <div class="primary-actions">
-            <button id="speak-button" class="primary-button" type="button">
-              <span>Add API key to generate</span>
-              <span aria-hidden="true">▶</span>
-            </button>
-            <button id="stop-button" class="square-button" type="button" disabled aria-label="Stop speech">
-              ■
-            </button>
-            <button id="replay-button" class="square-button" type="button" disabled aria-label="Replay speech">
-              ↻
-            </button>
-          </div>
-
-        </details>
-
-        <div class="speech-readout" aria-live="polite">
-          <div class="status-row">
-            <span id="speech-status" data-state="idle">Ready for a phrase</span>
-            <span id="speech-source">no audio loaded</span>
-          </div>
-          <div class="gesture-row">
-            <span>ACTIVE GESTURE</span>
-            <strong id="active-gesture">articulatory rest</strong>
-          </div>
-          <div class="articulation-meters" aria-label="Current articulation strengths">
-            <div><span>JAW</span><i id="meter-jaw"></i></div>
-            <div><span>LIPS</span><i id="meter-lips"></i></div>
-            <div><span>TONGUE</span><i id="meter-tongue"></i></div>
-          </div>
-          <div class="phoneme-window">
-            <span class="phoneme-label">IPA / DETERMINISTIC PHONE WINDOWS</span>
-            <div id="phoneme-track" class="phoneme-track" aria-label="Deterministic phone sequence">
-              <span class="phone-chip phone-chip--quiet">awaiting speech</span>
+            <div class="identity-actions">
+              <select id="wallet-select" aria-label="Choose Solana wallet"></select>
+              <button id="connect-wallet" class="secondary-button" type="button">Connect wallet</button>
+              <button id="join-simulation" class="secondary-button" type="button">Join simulation</button>
+              <button id="disconnect-wallet" class="text-button" type="button" hidden>Sign out</button>
             </div>
-          </div>
-        </div>
+            <p id="identity-help">Use a simulated identity now, or verify a wallet by signing a free login message.</p>
+          </section>
 
-        <details class="disclosure">
-          <summary>How speech becomes motion</summary>
-          <p id="voice-disclosure"></p>
-          <p id="timing-disclosure"></p>
-          <p>
-            The outer lips and mouth interior belong to the same native GNM mesh. Teeth and tongue
-            are the model’s own internal anatomy; no detached facial shell or replacement mouth is used.
-          </p>
-        </details>
+          <form id="question-form" class="question-form">
+            <div class="question-mode" role="radiogroup" aria-label="Submission type">
+              <label><input type="radio" name="question-kind" value="ask" checked /><span>ASK A QUESTION</span></label>
+              <label><input type="radio" name="question-kind" value="guess" /><span>MAKE A GUESS</span></label>
+            </div>
+            <label class="question-field" for="question-input">
+              <span id="question-label">Your yes-or-no question</span>
+              <textarea
+                id="question-input"
+                maxlength="240"
+                rows="3"
+                placeholder="Is it alive?"
+                required
+              ></textarea>
+            </label>
+            <div class="question-footer">
+              <span id="character-count">0 / 240</span>
+              <button id="submit-question" class="primary-button" type="submit" disabled>
+                <span id="submit-label">JOIN TO ASK</span>
+                <span id="submit-price">0.01 SOL</span>
+              </button>
+            </div>
+            <p id="action-status" class="action-status" role="status" aria-live="polite">Watching the public round.</p>
+          </form>
 
-        <aside class="project-callout" aria-label="Use this demo in your own project">
-          <span>OPEN SOURCE STARTER</span>
-          <strong>Give your local agent a face.</strong>
-          <p>
-            Clone the project, swap in your preferred local models, and connect the GNM rig to your
-            own agent experience.
-          </p>
-          <a
-            href="https://github.com/majidmanzarpour/threejs-talking-avatar"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View the project on GitHub <span aria-hidden="true">↗</span>
-          </a>
-        </aside>
+          <section class="transcript" aria-labelledby="transcript-title">
+            <div class="transcript-heading">
+              <div><span>LIVE ROUND</span><h2 id="transcript-title">Questions everyone can hear</h2></div>
+              <span id="player-count-label">REALTIME</span>
+            </div>
+            <ol id="question-list" class="question-list">
+              <li class="empty-state">No questions yet. The secret is waiting.</li>
+            </ol>
+          </section>
+        </section>
       </section>
 
-      <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite">
-        <div class="loading-monogram" aria-hidden="true">G</div>
-        <div class="loading-copy">
-          <span id="loading-label">Loading native GNM anatomy</span>
-          <i id="loading-progress"></i>
-        </div>
-      </div>
-
-      <dialog id="evidence-dialog" class="evidence-dialog" aria-labelledby="evidence-title">
-        <div class="evidence-shell">
-          <header>
-            <div>
-              <p>ABOUT / RUNTIME ARCHITECTURE</p>
-              <h2 id="evidence-title">One face.<br />One deformation surface.</h2>
-            </div>
-            <button id="close-evidence" type="button" aria-label="Close rig information">×</button>
-          </header>
-
-          <div class="evidence-intro">
-            <p>
-              This app bakes Google GNM Head v3 offline with the population-mean identity and 51
-              named facial targets. Browser playback maps waveform-refined speech gestures directly
-              into that expanded native basis every frame—without a learned animation model.
-            </p>
-            <dl>
-              <div><dt>Identity</dt><dd>Mean / 0</dd></div>
-              <div><dt>Targets</dt><dd>51</dd></div>
-              <div><dt>Surface</dt><dd>Native</dd></div>
-            </dl>
-          </div>
-
-          <div class="architecture-flow" aria-label="Speech animation pipeline">
-          <span>local microphone</span>
-            <i aria-hidden="true">→</i>
-            <span>local STT + LLM</span>
-            <i aria-hidden="true">→</i>
-            <span>local PCM + IPA</span>
-            <i aria-hidden="true">→</i>
-            <span>coarticulation</span>
-            <i aria-hidden="true">→</i>
-            <span>GNM morphs</span>
-          </div>
-
-          <div class="method-note">
-            <h3>Voice options</h3>
-            <p>
-              Conversational generation can use Supertonic, Kokoro, or KittenTTS locally. Optional
-              direct-phrase playback calls ElevenLabs from this browser with a locally stored key;
-              this static demo has no application server.
-            </p>
-            <div class="method-links">
-              <a href="https://github.com/google/GNM" target="_blank" rel="noreferrer">
-                Google GNM ↗
-              </a>
-              <a
-                href="https://github.com/majidmanzarpour/threejs-talking-avatar"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Talking Avatar source ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </dialog>
+      <footer class="site-footer">
+        <span>SERVER-OPERATED REFEREE · CUSTODIAL POT</span>
+        <span>SIMULATION DEFAULT · MAINNET READY</span>
+      </footer>
     </main>
 
     <script type="module" src="/src/main.ts"></script>

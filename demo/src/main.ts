@@ -1,17 +1,12 @@
-import './styles.css';
-import { PortraitApp } from './portrait/PortraitApp';
+import './game.css';
+import { GameApp } from './game/GameApp';
 
 const canvas = document.querySelector<HTMLCanvasElement>('#portrait-canvas');
+if (!canvas) throw new Error('Missing #portrait-canvas element.');
 
-if (!canvas) {
-  throw new Error('Missing #portrait-canvas element.');
-}
-
-const portrait = new PortraitApp(canvas);
-portrait.start();
+const game = new GameApp(canvas);
+void game.start();
 
 if (import.meta.hot) {
-  import.meta.hot.dispose(() => {
-    portrait.dispose();
-  });
+  import.meta.hot.dispose(() => game.dispose());
 }
